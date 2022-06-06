@@ -6,9 +6,7 @@ $paragrafoSenzaSpazi = str_replace(" ", "", $paragrafo);
 
 $lunghezzaParagrafo = strlen($paragrafoSenzaSpazi);
 
-$paragrafoCensurato = str_replace("ipsum", "***", $paragrafo);
-
-$_GET["term"];
+$paragrafoCensurato = str_replace("$_GET[term]", "***", $paragrafo);
 
 ?>
 
