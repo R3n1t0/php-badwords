@@ -8,6 +8,10 @@ $lunghezzaParagrafo = strlen($paragrafoSenzaSpazi);
 
 $paragrafoCensurato = str_replace("$_GET[term]", "***", $paragrafo);
 
+$paragrafoCensuratoSenzaSpazi = str_replace(" ", "", $paragrafoCensurato);
+
+$lunghezzaParagrafoCensurato = strlen($paragrafoCensuratoSenzaSpazi)
+
 ?>
 
 <!DOCTYPE html>
@@ -20,8 +24,8 @@ $paragrafoCensurato = str_replace("$_GET[term]", "***", $paragrafo);
 </head>
 <body>
   <p><?php echo $paragrafo ?></p>
-  <h2>La lunghezza del pragrafo qui sopra scritto e' di <?php echo $lunghezzaParagrafo ?> caratteri</h2>
-  <h3>Il paragrafo censurato e' qui sotto scritto</h3>
+  <h2>La lunghezza del pragrafo qui sopra scritto e' di <?php echo $lunghezzaParagrafo ?> caratteri.</h2>
+  <h3>Il paragrafo censurato e' qui sotto scritto e la sua lunghezza e' di <?php echo $lunghezzaParagrafoCensurato ?> caratteri.</h3>
   <p><?php echo $paragrafoCensurato ?></p>
 </body>
 </html>
