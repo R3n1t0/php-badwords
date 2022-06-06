@@ -6,6 +6,8 @@ $paragrafoSenzaSpazi = str_replace(" ", "", $paragrafo);
 
 $lunghezzaParagrafo = strlen($paragrafoSenzaSpazi);
 
+$paragrafoCensurato = str_replace("ipsum", "***", $paragrafo);
+
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +20,8 @@ $lunghezzaParagrafo = strlen($paragrafoSenzaSpazi);
 </head>
 <body>
   <p><?php echo $paragrafo ?></p>
-  <h2>La lunghezza del pragrafo qui sopra scritto e' di <?php echo $lunghezzaParagrafo ?> caratterri</h2>
+  <h2>La lunghezza del pragrafo qui sopra scritto e' di <?php echo $lunghezzaParagrafo ?> caratteri</h2>
+  <h3>Il paragrafo censurato e' qui sotto scritto</h3>
+  <p><?php echo $paragrafoCensurato ?></p>
 </body>
 </html>
