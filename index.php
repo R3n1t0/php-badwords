@@ -8,6 +8,8 @@ $lunghezzaParagrafo = strlen($paragrafoSenzaSpazi);
 
 $paragrafoCensurato = str_replace("ipsum", "***", $paragrafo);
 
+$_GET["term"];
+
 ?>
 
 <!DOCTYPE html>
