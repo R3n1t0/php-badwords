@@ -1,6 +1,10 @@
 <?php
 
-$paragrafo = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, voluptatum culpa! Ratione nemo, voluptatum obcaecati omnis nihil nobis similique perspiciatis laborum recusandae, minima non. Error aperiam numquam ipsum recusandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus debitis culpa dicta dolor delectus maiores illo corrupti aspernatur sint, eveniet fuga labore natus ipsum et harum doloremque exercitationem esse?"
+$paragrafo = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, voluptatum culpa! Ratione nemo, voluptatum obcaecati omnis nihil nobis similique perspiciatis laborum recusandae, minima non. Error aperiam numquam ipsum recusandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus debitis culpa dicta dolor delectus maiores illo corrupti aspernatur sint, eveniet fuga labore natus ipsum et harum doloremque exercitationem esse?";
+
+$paragrafoSenzaSpazi = str_replace(" ", "", $paragrafo);
+
+$lunghezzaParagrafo = strlen($paragrafoSenzaSpazi);
 
 ?>
 
@@ -14,5 +18,6 @@ $paragrafo = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, vo
 </head>
 <body>
   <p><?php echo $paragrafo ?></p>
+  <h2>La lunghezza del pragrafo qui sopra scritto e' di <?php echo $lunghezzaParagrafo ?> caratterri</h2>
 </body>
 </html>
